@@ -1,0 +1,91 @@
+.hello{
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: box infinite 3s normal ease-in ;
+}
+@keyframes box {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 200px;
+    }
+    50%{
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        top: 200px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+.hello1{
+    width: 100px;
+    height: 50px;
+    /* border-radius: 50%; */
+    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease-in;
+}
+.hello1:hover{
+    direction: ltr;
+    width: 400px;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: gray;
+    border-radius: 20px;
+    /* display: flex; */
+    /* gap: 20px; */
+    /* padding-bottom: 20px; */
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+@media all and (min-width:300px) and (max-width:760px){
+    .name{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+
+.box1{
+    background-image: url(./download.jpg);
+}
+.box2{
+    background-image: url(./images.jpg);
+    grid-area: 2/2/-3/-2 ;
+}
+.box3{
+    background-image: url(./Screenshot\ 2023-08-21\ 201707.png);
+    grid-area: 1/1/2/2;
+}
+.box4{
+    background-image: url(./Screenshot\ 2023-08-21\ 201746.png);
+}

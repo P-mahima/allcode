@@ -1,0 +1,106 @@
+.box{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: chartreuse;
+    border-radius: 50%;
+    position: relative;
+    animation: box 5s 1 alternate ease-in;
+}
+
+@keyframes box{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    50%{
+        top: 0px;
+        left: 200px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.box1{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: chartreuse;
+    /* border-radius: 50%; */
+    position: relative;
+    animation: box1 5s  infinite normal;
+}
+@keyframes box1{
+    /* 0%{
+        transform: skewX(-30deg);
+    }
+    100%{
+        transform: skewX(30deg);
+    } */
+    /* 0%{
+        transform: skewY(30deg);
+
+    }
+    100%{
+        transform: skewY(-30deg);
+    } */
+    /* 0%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    } */
+    /* 0%{
+        transform: scaleX(0.5);
+    } */
+    0%{
+        transform: scaleY(0.5);
+    }
+}
+
+.box2{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: chartreuse;
+    /* border-radius: 50%; */
+    /* position: relative; */
+    /* animation: box2 5s  infinite normal; */
+    transition: all 3s ease-in-out;
+}
+.box2:hover{
+    direction: ltr;
+    width: 200px;
+}
+
+
+.box3{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background-color: chartreuse;
+    /* border-radius: 50%; */
+    /* position: relative; */
+    /* animation: box2 5s  infinite normal; */
+    /* transition: all 3s ease-in-out; */
+}
+
+.box3:hover{
+    transform: translate(0, -15px);
+}
+/* h1, h2, h3{
+    color:chartreuse ;
+} */
+.one , .one1, .one2{
+    color:darkgoldenrod;
+}

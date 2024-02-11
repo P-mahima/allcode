@@ -1,0 +1,70 @@
+.center{
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.box{
+    width: 60px;
+    height: 30px;
+    background-color: greenyellow;
+    text-align: center;
+    transition: all 3s ease-in;
+}
+.box:hover{
+    direction: ltr;
+    width: 500px;
+}
+
+.box2{
+    width: 60px;
+    height: 30px;
+    background-color: greenyellow;
+    text-align: center;
+    position: relative;
+    animation: box 10s infinite ease-in;
+}
+@keyframes box{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 200px;
+    }
+
+}
+
+.flex{
+
+    display: flex;
+    gap: 20px;
+}
+.boxx{
+    width: 60px;
+    height: 30px;
+    background-color: greenyellow;
+}
+@media all and (min-width : 200px) and (max-width: 500px){
+    .flex{
+
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+@media all and (min-width : 500px) and (max-width:800px){
+    .flex{
+
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+    }
+}

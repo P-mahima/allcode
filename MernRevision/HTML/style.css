@@ -1,0 +1,57 @@
+.nav-logo{
+    text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 25%,
+      #ff1361 75%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-color: #f5b921;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+  z-index: 10;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+.nav-logo{
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg , rgb(57, 57, 146) 0% , blue 25% , red 75%, yellow 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-color: #fff800;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip:text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  animation:  textclip, 2s ,linear , infinite;
+}
+
+@keyframes textclip {
+  to{
+    background-position:  20% center;
+  }
+}
+  
